@@ -27,6 +27,13 @@ opencv, numpy, dlib, face_recognition, webrtc, baidu-aip...（emmm 时间久远�
 聊天：https://blog.csdn.net/yonglisikao/article/details/82314512  
 云台控制：https://blog.csdn.net/yonglisikao/article/details/82318626  
 其他：我感觉主要是snowboy配置的时候有点麻烦，反正我不能直接用官方编译的库（so文件），非得自己再编译一下，不过官方也有教程，我就不说了啊
+### （代码）文件解释
+（顾名思义就好，感觉我起的名字都挺直观的）  
+总体结构：  
+1.together.py是主程序，其他都是库  
+2.说实话，multiProcess.py才是真正的主程序（我也不知道together.py存在的价值是什么:( 对，我使用了多进程）  
+3.其他py文件都是库，除了snowboydecoder.py（snowboy官方提供的），其他文件都像它们的名字一样好理解  
+4.temp.wav是存放的语音，每次都会换  
 ## 其他注意事项
 代码里的密钥，密码什么的我都改了一下（第一次上传的时候，把自己邮箱密码都传上去了，唉，搞了半天），要用你自己的哦，反正都是免费的。
 ## 最后
