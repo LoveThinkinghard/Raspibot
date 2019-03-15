@@ -18,10 +18,10 @@ A robot dased on raspiberry pi who can see, listen, speak, chat, face recognitio
 人脸识别：python库——face_recognition（离线）  
 语音识别与语音合成：百度云语音（在线）  
 聊天对话：图灵机器人（在线）  
-云台控制：自己设计的土方法  
+云台控制：自己设计的简易方法  
 关键词检测：snowboy  
-语音端点检测（VAD）:webrtcvad + github上找的代码  
-邮件发送：python自带支持，代码主要参考廖雪峰老师的  
+语音端点检测（VAD）: webrtcvad + github上找的代码  
+邮件发送：python自带支持，代码参考廖雪峰老师的教程  
 
 ## 实现
 
@@ -31,7 +31,8 @@ A robot dased on raspiberry pi who can see, listen, speak, chat, face recognitio
 
 ### 需要安装的python库
 
-（建议你[虚拟环境](https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/001432712108300322c61f256c74803b43bfd65c6f8d0d0000)里安装，方便包的管理）  
+建议在[虚拟环境](https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/001432712108300322c61f256c74803b43bfd65c6f8d0d0000)里安装，方便包的管理
+
 opencv, numpy, dlib, face_recognition, webrtc, baidu-aip等（实际运行如果还需要什么，可以根据`报错提示`和各种`搜索引擎`安装相应的包）
 
 ### 具体实现
@@ -41,9 +42,9 @@ opencv, numpy, dlib, face_recognition, webrtc, baidu-aip等（实际运行如果
 云台控制：https://blog.csdn.net/yonglisikao/article/details/82318626  
 其他：我感觉主要是snowboy配置的时候有点麻烦，反正我不能直接用官方编译的库（so文件），非得自己再编译一下，不过官方也有[教程](http://docs.kitt.ai/snowboy/)
 
-### （代码）文件解释
+### 文件解释
 
-（顾名思义就好，个人感觉名字起的都挺直观的）  
+建议顾名思义，名字起的都挺直观的  
 
 总体结构：  
 1.together.py是主程序，其他都是库  
